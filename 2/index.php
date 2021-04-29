@@ -22,7 +22,7 @@
   } elseif ($validName <= 3) {
       echo "INSERISCI UN NOME CON PIU' DI TRE CARATTERI :)";
   } else {
-    echo "TUTTO OK :D";
+      echo "TUTTO OK :D";
   }
 ?> 
 

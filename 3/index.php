@@ -44,18 +44,19 @@ var_dump($posts);
 foreach ($posts as $date => $value) {
 		?>
 		<div>
-			<?php echo $date ?>
+			<i><?php echo $date ?></i>
 		</div>
 	<?php 
 
 	//all'interno di ogni array ciclo per trovare il valore di text
 		for ($i=0; $i < count($value) ; $i++) { 
 			?>
-			<div>
-				<?php echo $value[$i]["title"]?>
-				<?php echo $value[$i]["author"]?>
-				<?php echo $value[$i]["text"]?>
+			<div style="margin-bottom: 30px;">
+				<h2><?php echo $value[$i]["title"]?></h2>
+				<h4><?php echo $value[$i]["author"]?></h4>
+				<p><?php echo $value[$i]["text"]?></p>
 			</div>
+			<hr>
 		<?php }
 }
 ?>

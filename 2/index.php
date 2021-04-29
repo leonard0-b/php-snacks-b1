@@ -15,14 +15,17 @@
   //controllo lunghezza nome
   $validName = strlen($name);
 
-  if($emailValidate === false || $emailValidateAt === false || $emailDot === false) {
+  if($name === null && $email === null && $age === null) {
+    echo "INSERISCI I TUOI DATI :)";
+  } elseif ($emailValidate === false || $emailValidateAt === false || $emailDot === false) {
     echo "LA MAIL NON VA BENE :)";
   } elseif ($ageValidate === false) {
-      echo "LA TUA ETA' DEVE ESSERE UN NUMERO :)";
-  } elseif ($validName <= 3) {
-      echo "INSERISCI UN NOME CON PIU' DI TRE CARATTERI :)";
-  } else {
+    echo "LA TUA ETA' DEVE ESSERE UN NUMERO :)";
+  } elseif ($validName <= 2) {
+    echo "INSERISCI UN NOME CON PIU' DI DUE CARATTERI :)";
+  } elseif ($name === null && $email === null && $age === null) {
+    echo "INSERISCI I TUOI DATI :)";
+  }  else {
       echo "TUTTO OK :D";
   }
 ?> 
-

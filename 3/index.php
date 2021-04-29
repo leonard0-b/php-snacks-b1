@@ -38,4 +38,28 @@ $posts = [
         ]
     ],
 ];
+
+var_dump($posts);
+//cerco le chiavi dell'array (date)
+foreach ($posts as $date => $value) {
+		?>
+		<div>
+			<?php echo $date ?>
+		</div>
+	<?php 
+
+	//all'interno di ogni array ciclo per trovare il valore di text
+		for ($i=0; $i < count($value) ; $i++) { 
+			?>
+			<div>
+				<?php echo $value[$i]["title"]?>
+				<?php echo $value[$i]["author"]?>
+				<?php echo $value[$i]["text"]?>
+			</div>
+		<?php }
+}
 ?>
+
+
+
+

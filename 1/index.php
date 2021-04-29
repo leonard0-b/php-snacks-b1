@@ -21,9 +21,11 @@
   ];
 
   var_dump($campionato);
+  //scorro array del campionato
   for($i = 0; $i < count($campionato); $i++) {
     ?> 
     <div>
+   <!-- stampo per ogni array tutti gli oggetti -->
       <?php echo $campionato[$i]["squadracasa"] ?> -
       <?php echo $campionato[$i]["squadraospite"] ?> |
       <?php echo $campionato[$i]["punticasa"] ?> -

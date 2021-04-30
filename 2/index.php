@@ -25,7 +25,7 @@
     echo "INSERISCI UN NOME CON PIU' DI DUE CARATTERI :)";
   } elseif ($name === null && $email === null && $age === null) {
     echo "INSERISCI I TUOI DATI :)";
-  }  else {
-      echo "TUTTO OK :D";
+  } else {
+    echo "TUTTO OK :D";
   }
 ?> 
